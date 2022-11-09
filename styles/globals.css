@@ -33,11 +33,17 @@ a {
   text-align: center;
 }
 .btn-continue{
-  background-image: url("../resources/Boton.png");
+  background-color: white;
+  color: #aaa;
+  border-radius: 30px;
+  font-size: 2em;
+  height: 2em;
+  width: 7em;
+  /* background-image: url("../resources/Boton.png");
   background-size: cover;
   background-position: center;
   width: 25%;
-  height: 10vh;
+  height: 10vh; */
 }
 
 .btn-landing{
@@ -51,9 +57,10 @@ a {
   width: 100%;
 }
 .btn-bview{
-  height: 100%;
+  position: relative;
   bottom: 10%;
   width: 100%;
+  margin-top: 2em;
 }
 
 /* Backgrounds Views */
@@ -62,8 +69,14 @@ a {
 }
 .bg-regular-view{
   background-image: url("../resources/Fondo\ 2.png");
+  padding: 10% 0;
 }
-
+.fieldNumber{
+  height: 3rem;
+  width: 3em;
+  font-size: 2em;
+  margin: auto;
+}
 
 /* Specific cases */
 #big-text{
@@ -72,11 +85,17 @@ a {
   margin: 0;
 }
 #calculation-area{
-  margin-top: 20px;
   padding: 10px;
   background-color: blueviolet;
+  width: 40%;
+  margin: 0 auto;
 }
 #calculation{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 1;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+}
+#plus{
+  font-size: 2em;
+  margin: auto;
 }
