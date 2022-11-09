@@ -1,6 +1,7 @@
 import BtnContinue from "../Components/BtnContinue";
 import { FaPlus } from 'react-icons/fa';
 import { useCallback, useRef, useState } from "react";
+import BtnBack from "../Components/BtnBack";
 
 const BView = () => {
   const [plus, setPlus] = useState({ n1: 0, n2: 0 });
@@ -30,6 +31,8 @@ const BView = () => {
           <BtnContinue location="/cView" data={{ ...plus, plus: plus.n1 + plus.n2 }} />
         </div>
       </div>
+
+      <BtnBack />
     </div >
   )
 }

@@ -2,6 +2,7 @@ import BtnContinue from "../Components/BtnContinue";
 import { FaPlus } from 'react-icons/fa';
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
+import BtnBack from "../Components/BtnBack";
 
 const CView = () => {
   const router = useRouter();
@@ -30,6 +31,8 @@ const CView = () => {
           <BtnContinue location="/dView" />
         </div>
       </div>
+
+      <BtnBack />
     </div >
   )
 }

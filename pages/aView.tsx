@@ -1,3 +1,4 @@
+import BtnBack from "../Components/BtnBack";
 import BtnContinue from "../Components/BtnContinue";
 
 const AView = () => {
@@ -7,6 +8,8 @@ const AView = () => {
       <div className="btn-aview">
         <BtnContinue location="/bView" />
       </div>
+
+      <BtnBack />
     </div>
   )
 }
