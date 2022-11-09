@@ -7,7 +7,6 @@ const AView = () => {
       <div className="btn-aview">
         <BtnContinue location="/bView" />
       </div>
-
     </div>
   )
 }
