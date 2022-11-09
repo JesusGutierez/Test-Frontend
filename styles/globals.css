@@ -91,11 +91,14 @@ a {
   margin: 0 auto;
 }
 #calculation{
-  display: grid;
-  gap: 1;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(5em, 20%));
 }
 #plus{
   font-size: 2em;
   margin: auto;
+}
+#result{
+  margin: 10px auto;
 }
